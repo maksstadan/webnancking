@@ -27,6 +27,35 @@
             <tbody></tbody>
         </table>
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit balance</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form">
+                        <input type="hidden" id="card-number">
+                        <div class="d-flex justify-content-evenly">
+                            <div>
+                                <input type="radio" name="type" class="form-check-input" id="withdraw" checked> 
+                                <label for="withdraw" class="form-check-label">Withdraw</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="type" class="form-check-input" id="deposit"> 
+                                <label for="deposit" class="form-check-label">Deposit</label>
+                            </div>
+                        </div>
+
+                        <input type="number" class="form-control my-3" name="amount">
+                        <button type="submit" class="btn btn-outline-success w-100">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
